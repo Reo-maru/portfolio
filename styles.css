@@ -1,0 +1,497 @@
+
+/*全体*/
+body{
+    margin: 0;
+}
+
+/*ロード画面*/
+#loading {
+    width: 100vw;
+    height: 100vh;
+    transition: all 0.5s 0.5s ease-in;
+    background-color: rgb(255, 212, 219);
+    position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  }
+  .loaded {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .spinner {
+  margin-top: 18%;
+  margin-left: 35%;
+
+  }
+
+/*トップページ*/
+.top{
+    width: 100%;
+    position: sticky;
+}
+/*コンテンツ部分レイアウト*/
+.content{
+    display: grid;
+    grid-template-columns:32% 36% 32%;
+    position: relative;
+}
+
+/*左右バー*/
+.left-bar{
+    margin: 0;
+    grid-column: 1/2;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+}
+.right-bar{
+    margin: 0;
+    grid-column: 3/4;
+    position: sticky;
+    top: 0px;
+    grid-row: 1/2;
+    width: 100%;
+}
+
+/*メニュー（右バー）*/
+.right-bar00{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    width: 100%;
+   position: relative;
+    top: 0px;
+}
+.menu{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 50px;
+    padding-top: 100px;
+    padding-bottom: 180%;
+}
+
+.menu00{
+    
+    top: 2%;
+    left: 35%;
+    cursor: pointer;
+}
+
+.product00{  
+    top: 3.5%;
+    left: 28%;
+    cursor: pointer;
+    background: url(img/product00-1.png) center / cover no-repeat;
+}
+.product00 img {
+	border-radius: inherit;
+	vertical-align: middle;
+	transition: opacity .3s;
+}
+.product00:hover img {
+	opacity: 0;
+}
+
+.calender00{
+   
+    top: 5%;
+    left: 26%;
+    cursor: pointer;
+    background: url(img/seasonal\ calendar00-1.png) center / cover no-repeat;
+}
+.calender00 img {
+	border-radius: inherit;
+	vertical-align: middle;
+	transition: opacity .3s;
+}
+.calender00:hover img {
+	opacity: 0;
+}
+
+.trivia00{
+    
+    top: 6.65%;
+    left: 33%;
+    cursor: pointer;
+    background: url(img/trivia00-1.png) center / cover no-repeat;
+}
+.trivia00 img {
+	border-radius: inherit;
+	vertical-align: middle;
+	transition: opacity .3s;
+}
+.trivia00:hover img {
+	opacity: 0;
+}
+
+.ranking00{
+   
+    top: 8%;
+    left: 30%;
+    cursor: pointer;
+    background: url(img/ranking00-1.png) center / cover no-repeat;
+}
+.ranking00 img {
+	border-radius: inherit;
+	vertical-align: middle;
+	transition: opacity .3s;
+}
+.ranking00:hover img {
+	opacity: 0;
+}
+
+.recipe00{
+    top: 9.5%;
+    left: 32%;
+    cursor: pointer;
+    background: url(img/recipe00-1.png) center / cover no-repeat;
+}
+.recipe00 img {
+	border-radius: inherit;
+	vertical-align: middle;
+	transition: opacity .3s;
+}
+.recipe00:hover img {
+	opacity: 0;
+}
+
+
+
+/*真ん中の情報部分*/
+.naka{
+    grid-column: 2/3;
+    
+}
+
+/*プロダクトページ*/
+.prodact-page{
+    background-color: #FFE0E5;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+.wrap{
+    display: flex;
+    overflow: hidden;
+}
+    
+.prodact01{
+    margin-top: 20%;
+    width: 100%;
+}
+.prodact-photo{
+    margin-top: 15%;
+    width: 100%;
+}
+.prodact-moji{
+    margin-top: 15%;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prodact02{
+    margin-top: 15%;
+    margin-bottom: 15%;
+    width: 100%;
+}
+.wrap2{
+    display: flex;
+    overflow: hidden;
+}
+
+/*プロダクトページここまで*/
+
+
+/*カレンダーページ*/
+.calender-page{
+    background-color: #FF8EA0;
+    text-align: center;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+}
+.calender01{
+    width: 100%;
+    margin-top: 20%;
+
+}
+.calender-momo{
+    width: 130%;
+}
+.calender-page::after {
+   position: absolute;
+   border: 3px solid white;
+   content: "" ;
+   top: 1%;
+   bottom: 1%;
+   left: 2%;
+   right: 2%;
+
+}
+.kasaneru{
+    position: relative;
+}
+.calender-photo{
+    position: absolute;
+    width: 80%;
+    margin-top: 10%;
+    transform: translate(12%,0%);
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.calender-moji{
+    width: 55%;
+    position: absolute;
+    transform: translate(-50%,-155%);
+
+}
+
+/*カレンダーページここまで*/
+
+
+/*トリビアページ*/
+.trivia-page{
+    background-color: #FFECE1;
+    background-image: url(img/Group\ 9.png);
+   background-size:contain;
+    background-repeat: repeat;
+    height: fit-content;
+    padding: 0px;
+    min-height: 500px;
+    text-align: center;
+}
+
+.trivia01{
+    width: 80%;
+    margin-left: 20%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    
+}
+.triviaphoto{
+    width: 100%;
+}
+.accordion-area{
+    list-style: none;
+    padding: 10%;
+    width: 80%;
+    margin: 0;
+}
+.accordion-area li{
+    margin:  0;
+}
+
+  .title {
+    position: relative;/*+マークの位置基準とするためrelative指定*/
+    cursor: pointer;
+    padding: 3% 3% 3% 50px;
+    transition: all .5s ease;
+    color: #D95766;
+    border-bottom: solid 3px #D95766;
+}
+.title::before,
+.title::after{
+    position: absolute;
+    content:'';
+    width: 15px;
+    height: 2px;
+    background-color: #D95766;
+    border-bottom: solid 3px #D95766;
+}
+.title::before{
+    top:48%;
+    left: 15px;
+    transform: rotate(0deg);
+    
+}
+.title::after{    
+    top:48%;
+    left: 15px;
+    transform: rotate(90deg);
+
+}
+/*　closeというクラスがついたら形状変化　*/
+.title.close::before{
+  transform: rotate(45deg);
+}
+
+.title.close::after{
+  transform: rotate(-45deg);
+}
+.box {
+    display: none;/*はじめは非表示*/
+  margin:0 3% 3% 3%;
+    padding: 3%;
+}
+h2{
+    text-align: center;
+    margin:  0;
+    font-size:1rem;
+}
+.momo-eiyou{
+    width: 100%;
+}
+.momo-hozon{
+    width: 100%;
+}
+.momo-erabikata{
+    width: 100%;
+}
+.puchi{
+    width: 100%;
+}
+
+/*トリビアページここまで*/
+
+
+/*ランキングページ*/
+.ranking-page{
+    background-color: #E8CFCF;
+    position: relative;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+
+}
+.line2{
+   transform: translate(0%,50%);
+    width: 100%;
+   padding-top: 10px;
+   padding-bottom: 30px;
+}
+.line3{
+    transform: translate(0%,-50%);
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.ranking01{
+    width: 80%;
+  transform: translate(0%,30%);
+  padding-top: 100px;
+}
+
+ /* カルーセルの外枠 */
+.carousel {
+    width: 35%px;
+    display: flex;    /* 子要素を横に並べる */
+    overflow: hidden; /* はみ出た部分は表示しない */
+    margin: 0 auto;   /* 水平方向中央寄せ */
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  /* カルーセル内の画像 */
+  .carousel img {
+    margin: 0;
+    padding: 0;
+    display: block; /* imgタグの改行のすき間を消すため */
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 80%;
+  }
+  /* スクロールアニメーションのキーフレーム */
+  @keyframes scroll {
+    0% { margin-left: 0; }    
+    20% { margin-left: -97%; } 
+    25% { margin-left: -97%; }
+    45% { margin-left: -195%; }
+    50% { margin-left: -195%; }
+    70% { margin-left: -295%; }
+    75% { margin-left: -295%; }
+    95% { margin-left: -394%; }
+    100% { margin-left: -394%; }
+  }
+  /* カルーセルの子要素にスクロールアニメーションを設定 */
+  .carousel > :first-child {
+    animation-name: scroll;    /* キーフレーム名 */
+    animation-duration: 20s;  /* 再生時間全体は20秒 */
+    animation-delay: 0s;      /* 読込直後から遅延無しで開始 */
+    animation-iteration-count: infinite;  /* 無限に繰り返す */
+  }
+
+/*ランキングページここまで*/
+
+
+/*レシピページ*/
+.recipe-page{
+    position: relative;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+.recipe-page-photo{
+    width: 100%;
+    height: 80%;
+}
+.recipe01{
+    width: 80%;
+    position: absolute;
+    transform: translate(-112%,80%);
+}
+
+.recipe-link{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    position: absolute;
+    transform: translate(12%,-140%);
+}
+.recipe-box01{
+    width: 98%;
+}
+.recipe-box02{
+    width: 98%;
+}
+.recipe-box03{
+    width: 98%;
+}
+.recipe-box04{
+    width: 98%;
+}
+
+/*レシピページここまで*/
+
+
+/*ボトムページ*/
+.bottom{
+    background-color: #FFF2F4;
+    position: relative;
+    height: 700px;
+}
+.line-bottom{
+    width: 100%;
+    position: absolute;
+    top: 10%;
+}
+.Twitter{
+    position: absolute;
+    top: 50%;
+    left: 27%;
+}
+
+.Instagram{
+    position: absolute;
+    top: 50%;
+    left: 43%;
+}
+
+.Facebook{
+    position: absolute;
+    top: 50%;
+    left: 61%;
+    
+}
+.momopeach{
+    position: absolute;
+    bottom: 5%;
+    left: 43%;
+    right: 58%;
+}
+
+/*ボトムページここまで*/
